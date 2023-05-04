@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+      "module": "commonjs",
+      "declaration": true,
+      "removeComments": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "target": "es2017",
+      "resolveJsonModule": true,
+      "sourceMap": true,
+      "outDir": "./dist",
+      "baseUrl": "./",
+      "allowJs": true,
+      "skipLibCheck": true,
+      "incremental": true,
+      "paths": {
+          "@common/*": ["src/common/*"],
+          "@health/*": ["src/health/*"],
+          "@notification/*": ["src/notification/*"],
+          "src/*": ["src/*"]
+      }
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*"
+  ],
+  "watchOptions": {
+    "excludeFiles": []
+  }
+}

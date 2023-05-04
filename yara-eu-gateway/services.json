@@ -1,0 +1,20 @@
+{
+    "services": [
+        {
+            "name": "tankmix",
+            "localUrl": "http://tankmix:5001/",
+            "stagingUrl": "TBD",
+            "localPath": "../yara-eu-tankmix",
+            "port": "5001",
+            "useYarn": true
+        },
+        {
+            "name": "grassn",
+            "localUrl": "http://grassn:5002/",
+            "stagingUrl": "TBD",
+            "localPath": "../yara-eu-grassn",
+            "port": "5002",
+            "useYarn": true
+        }
+    ]
+}

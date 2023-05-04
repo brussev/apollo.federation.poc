@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..//yara-eu-grassn"
+		},
+		{
+			"path": "..//yara-eu-grassn-tankmix"
+		},
+	],
+	"settings": {
+		"cSpell.words": [
+		]
+	}
+}
