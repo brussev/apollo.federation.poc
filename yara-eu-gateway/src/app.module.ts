@@ -1,11 +1,11 @@
 import { MiddlewareConsumer, Module, NestModule, OnApplicationBootstrap, RequestMethod } from '@nestjs/common';
 import { GATEWAY_BUILD_SERVICE, GraphQLGatewayModule } from '@nestjs/graphql';
 import { LoggerModule } from 'nestjs-pino';
-import { CommonModule } from '@common/common.module';
-import { EnvService, NodeEnvs } from '@common/env.service';
-import { AuthenticationMiddleware } from '@common/middlewares/auth.middleware';
-import { GatewayHelperService } from '@common/utils/gateway-helper';
 import { HealthModule } from '@health/health.module';
+import { CommonModule } from './common/common.module';
+import { EnvService, NodeEnvs } from './common/env.service';
+import { AuthenticationMiddleware } from './common/middlewares/auth.middleware';
+import { GatewayHelperService } from './common/utils/gateway-helper';
 
 @Module({
     imports: [
@@ -62,8 +62,4 @@ import { HealthModule } from '@health/health.module';
         })
     ]
 })
-export class AppModule implements NestModule {
-    configure(consumer: MiddlewareConsumer) {
-        throw new Error('Method not implemented.');
-    }
-}
+export class AppModule {}

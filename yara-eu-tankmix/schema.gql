@@ -1,0 +1,113 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+directive @key(fields: String!) on OBJECT | INTERFACE
+
+directive @extends on OBJECT | INTERFACE
+
+directive @external on OBJECT | FIELD_DEFINITION
+
+directive @requires(fields: String!) on FIELD_DEFINITION
+
+directive @provides(fields: String!) on FIELD_DEFINITION
+
+"""Returned response from queries"""
+type Product {
+  """Entity unique identifier"""
+  id: ID!
+
+  """Name of the crop class"""
+  name: String!
+
+  """Yara by default?"""
+  type: String!
+
+  """Countries"""
+  countries: String!
+
+  """deprecated?"""
+  deprecated: Boolean!
+
+  """Date of creation"""
+  created: DateTime!
+
+  """Last date of modification"""
+  modified: DateTime!
+
+  """User who made last modification"""
+  modifiedBy: String!
+
+  """Date of deletion"""
+  deleted: DateTime
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type ManyProductResult {
+  cursor: Int
+  hasNextPage: Boolean
+  entities: [Product!]!
+}
+
+type Query {
+  """Query to get all entities depending on given filters"""
+  getProducts(
+    filter: [GenericFilter] = []
+    paging: Pagination = {size: 1000}
+    sorting: [Sorting]
+
+    """Supported filter operators for joining the filters"""
+    filterOperatorType: OperatorType
+  ): ManyProductResult!
+
+  """Query to get single entity depending on the given id"""
+  getProduct(id: ID!): Product
+}
+
+"""
+Filter that applies to the requested data based on the column name and filters
+"""
+input GenericFilter {
+  """Column that will be filtered on"""
+  key: String!
+
+  """Filter type"""
+  type: FilterType!
+
+  """Filters which will be applied on the specified column"""
+  value: String!
+}
+
+enum FilterType {
+  EQ
+  NE
+  LT
+  GT
+  LIKE
+  IN
+  NOTIN
+}
+
+input Pagination {
+  size: Int!
+  cursor: Int
+}
+
+input Sorting {
+  column: String!
+  orderDirection: OrderDirection = ASC
+}
+
+enum OrderDirection {
+  ASC
+  DESC
+}
+
+enum OperatorType {
+  AND
+  OR
+}

@@ -3,7 +3,7 @@ services:
   yara.europe.gateway:
     build:
       context: .
-      dockerfile: Dockerfile.yarn.local
+      dockerfile: Dockerfile
     ports:
       - '5000:5000'
     volumes:
@@ -46,7 +46,7 @@ services:
   tankmix:
     build:
       context: .
-      dockerfile: Dockerfile.yarn.local
+      dockerfile: Dockerfile
     depends_on:
       - yara.europe.database
     ports:
@@ -66,7 +66,7 @@ services:
   grassn:
     build:
       context: .
-      dockerfile: Dockerfile.yarn.local
+      dockerfile: Dockerfile
     depends_on:
       - yara.europe.database
     ports:

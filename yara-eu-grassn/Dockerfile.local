@@ -4,7 +4,7 @@ WORKDIR /opt/app
 
 COPY package*.json /opt/app/
 
-RUN npm install --silent
+RUN yarn install
 COPY . /opt/app/
 
-CMD npm start
+CMD yarn start
