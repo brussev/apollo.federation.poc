@@ -20,23 +20,23 @@ export class Harvest extends Model<Harvest> {
     id: string;
 
     @Column({ type: DataType.UUID })
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the harvest' })
     farmId: string;
 
     @Column({ type: DataType.UUID })
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the harvest' })
     fieldId: string;
 
     @Column({ type: DataType.DATE })
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the harvest' })
     date: string;
 
     @Column({ type: DataType.TEXT })
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the harvest' })
     crudeProteinContent: string;
 
     @Column({ type: DataType.TEXT })
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the harvest' })
     dryMatterYield: string;
 
     @Column(DataType.DATE)
@@ -61,7 +61,7 @@ export class HarvestInput {
     @Field(() => ID, { nullable: true, description: 'Entity unique identifier' })
     id?: string;
 
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the harvest' })
     name: string;
 }
 

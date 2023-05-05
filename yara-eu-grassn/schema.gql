@@ -24,7 +24,7 @@ type Organization {
   """Entity unique identifier"""
   id: ID!
 
-  """Name of the crop class"""
+  """Name of the organization"""
   name: String!
 
   """Date of creation"""
@@ -89,19 +89,19 @@ type Harvest {
   """Entity unique identifier"""
   id: ID!
 
-  """Name of the crop class"""
+  """Name of the harvest"""
   farmId: String!
 
-  """Name of the crop class"""
+  """Name of the harvest"""
   fieldId: String!
 
-  """Name of the crop class"""
+  """Name of the harvest"""
   date: String!
 
-  """Name of the crop class"""
+  """Name of the harvest"""
   crudeProteinContent: String!
 
-  """Name of the crop class"""
+  """Name of the harvest"""
   dryMatterYield: String!
 
   """Date of creation"""
@@ -161,22 +161,22 @@ type Fertilization {
   """Entity unique identifier"""
   id: ID!
 
-  """Name of the crop class"""
+  """Name of the fertilization"""
   farmId: String!
 
-  """Name of the crop class"""
+  """Name of the fertilization"""
   fieldId: String!
 
-  """Name of the crop class"""
+  """Name of the fertilization"""
   date: String!
 
-  """Name of the crop class"""
+  """Name of the fertilization"""
   fertilizerId: String!
 
-  """Name of the crop class"""
+  """Name of the fertilization"""
   amount: Float!
 
-  """Name of the crop class"""
+  """Name of the fertilization"""
   location: String!
 
   """Date of creation"""
@@ -361,7 +361,7 @@ input OrganizationInput {
   """Entity unique identifier"""
   id: ID
 
-  """Name of the crop class"""
+  """Name of the organization"""
   name: String!
 }
 
@@ -370,7 +370,7 @@ input FarmInput {
   """Entity unique identifier"""
   id: ID
 
-  """Name of the crop class"""
+  """Name of the farm"""
   name: String!
 }
 
@@ -379,7 +379,7 @@ input HarvestInput {
   """Entity unique identifier"""
   id: ID
 
-  """Name of the crop class"""
+  """Name of the harvest"""
   name: String!
 }
 
@@ -388,7 +388,7 @@ input FarmFieldInput {
   """Entity unique identifier"""
   id: ID
 
-  """Name of the crop class"""
+  """Name of the field"""
   name: String!
 }
 
@@ -397,6 +397,6 @@ input FertilizationInput {
   """Entity unique identifier"""
   id: ID
 
-  """Name of the crop class"""
+  """Name of the fertilization"""
   name: String!
 }

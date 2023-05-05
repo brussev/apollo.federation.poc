@@ -8,7 +8,7 @@ export class Product {
     @Field(() => ID, { description: 'Entity unique identifier' })
     id: string;
 
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the product' })
     name: string;
 
     @Field({ nullable: false, description: 'Yara by default?' })

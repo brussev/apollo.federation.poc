@@ -20,27 +20,27 @@ export class Fertilization extends Model<Fertilization> {
     id: string;
 
     @Column({ type: DataType.UUID })
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the fertilization' })
     farmId: string;
 
     @Column({ type: DataType.UUID })
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the fertilization' })
     fieldId: string;
 
     @Column({ type: DataType.DATE })
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the fertilization' })
     date: string;
 
     @Column({ type: DataType.TEXT })
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the fertilization' })
     fertilizerId: string;
 
     @Column({ type: DataType.DECIMAL })
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the fertilization' })
     amount: number;
 
     @Column({ type: DataType.JSONB })
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the fertilization' })
     location: string;
 
     @Column(DataType.DATE)
@@ -65,7 +65,7 @@ export class FertilizationInput {
     @Field(() => ID, { nullable: true, description: 'Entity unique identifier' })
     id?: string;
 
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the fertilization' })
     name: string;
 }
 

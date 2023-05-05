@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import { Client, RequestParams } from '@elastic/elasticsearch';
+import { Client } from '@elastic/elasticsearch';
 
 @Injectable()
 export class OpenSearchService {
@@ -13,11 +13,11 @@ export class OpenSearchService {
             requestTimeout: 3000
         });
 
-        this.client.cluster.health({}, async (err, { statusCode }) => {
-            // TODO introduce logger?
-            console.log(`-- ElasticSearch Client Health -- ${statusCode} --`);
-            console.log(`-- ERROR -- ${err?.message || 'No issues found'} --`);
-        });
+        // this.client.cluster.health({}, async (err, { statusCode }) => {
+        //     // TODO introduce logger?
+        //     console.log(`-- ElasticSearch Client Health -- ${statusCode} --`);
+        //     console.log(`-- ERROR -- ${err?.message || 'No issues found'} --`);
+        // });
     }
 
     // find all

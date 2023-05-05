@@ -999,6 +999,26 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
+"@elastic/elasticsearch@^8.7.0":
+  version "8.7.0"
+  resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/@elastic/elasticsearch/-/elasticsearch-8.7.0.tgz#eb0396f6899e0000109af55cffee514811e571ee"
+  integrity sha512-0u12N7gvSpv99XiiYE7OlOtVy4oFx7KNYd+/SSt0GqIcpj4X8bcILjpkQqK3HZcvkvwc8bFL9J11EMmUlg6FYw==
+  dependencies:
+    "@elastic/transport" "^8.3.1"
+    tslib "^2.4.0"
+
+"@elastic/transport@^8.3.1":
+  version "8.3.1"
+  resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/@elastic/transport/-/transport-8.3.1.tgz#e7569d7df35b03108ea7aa886113800245faa17f"
+  integrity sha512-jv/Yp2VLvv5tSMEOF8iGrtL2YsYHbpf4s+nDsItxUTLFTzuJGpnsB/xBlfsoT2kAYEnWHiSJuqrbRcpXEI/SEQ==
+  dependencies:
+    debug "^4.3.4"
+    hpagent "^1.0.0"
+    ms "^2.1.3"
+    secure-json-parse "^2.4.0"
+    tslib "^2.4.0"
+    undici "^5.5.1"
+
 "@eslint/eslintrc@^0.4.0":
   version "0.4.3"
   resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/@eslint/eslintrc/-/eslintrc-0.4.3.tgz#9e42981ef035beb3dd49add17acb96e8ff6f394c"
@@ -3529,6 +3549,13 @@ busboy@^0.3.1:
   dependencies:
     dicer "0.3.0"
 
+busboy@^1.6.0:
+  version "1.6.0"
+  resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/busboy/-/busboy-1.6.0.tgz#966ea36a9502e43cdb9146962523b92f531f6893"
+  integrity sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==
+  dependencies:
+    streamsearch "^1.1.0"
+
 bytes@3.1.0:
   version "3.1.0"
   resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/bytes/-/bytes-3.1.0.tgz#f6cf7933a360e0588fa9fde85651cdc7f805d1f6"
@@ -5706,6 +5733,11 @@ hosted-git-info@^2.1.4:
   resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
   integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
+hpagent@^1.0.0:
+  version "1.2.0"
+  resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/hpagent/-/hpagent-1.2.0.tgz#0ae417895430eb3770c03443456b8d90ca464903"
+  integrity sha512-A91dYTeIB6NoXG+PxTQpCCDDnfHsW9kc06Lvpu1TEe9gnd6ZFeiBoRO9JvzEv6xK7EX97/dUE8g/vBMTqTS3CA==
+
 html-encoding-sniffer@^2.0.1:
   version "2.0.1"
   resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/html-encoding-sniffer/-/html-encoding-sniffer-2.0.1.tgz#42a6dc4fd33f00281176e8b23759ca4e4fa185f3"
@@ -7362,7 +7394,7 @@ ms@2.1.2:
   resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-ms@2.1.3, ms@^2.0.0, ms@^2.1.1:
+ms@2.1.3, ms@^2.0.0, ms@^2.1.1, ms@^2.1.3:
   version "2.1.3"
   resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
@@ -8967,6 +8999,11 @@ streamsearch@0.1.2:
   resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/streamsearch/-/streamsearch-0.1.2.tgz#808b9d0e56fc273d809ba57338e929919a1a9f1a"
   integrity sha1-gIudDlb8Jz2Am6VzOOkpkZoanxo=
 
+streamsearch@^1.1.0:
+  version "1.1.0"
+  resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/streamsearch/-/streamsearch-1.1.0.tgz#404dd1e2247ca94af554e841a8ef0eaa238da764"
+  integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
+
 string-length@^4.0.1:
   version "4.0.2"
   resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/string-length/-/string-length-4.0.2.tgz#a8a8dc7bd5c1a82b9b3c8b87e125f66871b6e57a"
@@ -9597,6 +9634,13 @@ underscore@^1.13.1:
   version "1.13.6"
   resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/underscore/-/underscore-1.13.6.tgz#04786a1f589dc6c09f761fc5f45b89e935136441"
   integrity sha512-+A5Sja4HP1M08MaXya7p5LvjuM7K6q/2EaC0+iovj/wOcMsTzMvDFbasi/oSapiwOlt252IqsKqPjCl7huKS0A==
+
+undici@^5.5.1:
+  version "5.22.0"
+  resolved "https://testreach-domain-485190435628.d.codeartifact.eu-west-1.amazonaws.com/npm/testreach-npm/undici/-/undici-5.22.0.tgz#5e205d82a5aecc003fc4388ccd3d2c6e8674a0ad"
+  integrity sha512-fR9RXCc+6Dxav4P9VV/sp5w3eFiSdOjJYsbtWfd4s5L5C4ogyuVpdKIVHeW0vV1MloM65/f7W45nR9ZxwVdyiA==
+  dependencies:
+    busboy "^1.6.0"
 
 unique-filename@^1.1.1:
   version "1.1.1"

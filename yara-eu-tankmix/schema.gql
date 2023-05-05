@@ -17,7 +17,7 @@ type Product {
   """Entity unique identifier"""
   id: ID!
 
-  """Name of the crop class"""
+  """Name of the product"""
   name: String!
 
   """Yara by default?"""

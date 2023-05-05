@@ -28,6 +28,7 @@ import { FertilizationModule } from './fertilization/fertilization.module';
         HarvestModule,
         FieldModule,
         FertilizationModule,
+        // probably type orm is a better choice? we need to compare
         SequelizeModule.forRootAsync({
             inject: [EnvService],
             useFactory(env: EnvService) {

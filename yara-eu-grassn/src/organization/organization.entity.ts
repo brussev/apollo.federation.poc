@@ -20,7 +20,7 @@ export class Organization extends Model<Organization> {
     id: string;
 
     @Column({ type: DataType.STRING(200) })
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the organization' })
     name: string;
 
     @Column(DataType.DATE)
@@ -45,7 +45,7 @@ export class OrganizationInput {
     @Field(() => ID, { nullable: true, description: 'Entity unique identifier' })
     id?: string;
 
-    @Field({ nullable: false, description: 'Name of the crop class' })
+    @Field({ nullable: false, description: 'Name of the organization' })
     name: string;
 }
 
